@@ -1,0 +1,109 @@
+/* === Основне оформлення тіла сторінки === */
+body {
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 19px;
+	color: #222;
+	line-height: 1.8;
+	text-align: justify;
+	background: linear-gradient(to bottom, #fff3e0, #ffe0b2);
+	margin: 0;
+	padding: 30px;
+}
+
+/* === Заголовки === */
+h1, h2, h3 {
+	text-align: center;
+	color: #d84315;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: #ffccbc;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* === Посилання === */
+a {
+	color: #4a148c;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 2px dotted #4a148c;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #e91e63 !important;
+	border-bottom: 2px solid #e91e63;
+	background-color: #fce4ec;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+/* === Абзац з класом === */
+p.custom {
+	color: #c62828 !important;
+	font-style: italic;
+	font-size: 20px;
+}
+
+/* === Списки === */
+ul {
+	list-style-type: square;
+	color: #1b5e20;
+	padding-left: 25px;
+	font-size: 17px;
+}
+
+ol {
+	list-style-type: upper-roman;
+	color: #0d47a1;
+	padding-left: 35px;
+	font-size: 17px;
+}
+
+dl dt {
+	font-weight: bold;
+	color: #bf360c;
+	font-size: 18px;
+}
+
+dl dd {
+	margin-left: 35px;
+	color: #2e7d32;
+	font-style: italic;
+}
+
+/* === Таблиці === */
+table {
+	width: 95%;
+	margin: 40px auto;
+	border-collapse: collapse;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+	font-size: 17px;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+table th, table td {
+	border: 2px solid #ccc;
+	padding: 14px;
+}
+
+table th {
+	background-color: #ff7043;
+	color: white;
+	font-size: 18px;
+}
+
+table tr:nth-child(even) {
+	background-color: #fff8e1;
+}
+
+table tr:hover {
+	background-color: #ffe0b2;
+	transition: background-color 0.3s ease;
+}
+
