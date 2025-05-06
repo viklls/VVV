@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>Головна – Eaty</title>
+	<meta name="author" content="Онищенко Вікторія">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 30px;
+			background-color: #fffbe6;
+			color: #333;
+		}
+		h1 {
+			color: #ff5e57;
+		}
+		section {
+			margin-bottom: 30px;
+		}
+		.benefits {
+			background-color: #fff3e0;
+			padding: 15px;
+			border-radius: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		}
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 20px;
+			margin-top: 20px;
+		}
+		.gallery a img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+			transition: transform 0.3s ease;
+		}
+		.gallery a img:hover {
+			transform: scale(1.03);
+		}
+		.caption {
+			font-size: 0.9em;
+			color: #777;
+			text-align: center;
+			margin-top: 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Ласкаво просимо до Eaty!</h1>
+	<!-- Плаваючий блок навігації -->
+	<div class="float-block">
+		<h3>Популярне на сайті</h3>
+		<ul>
+			<li><a href="places.html">🍴 Найкращі заклади</a></li>
+			<li><a href="cuisines.html">🌍 Типи кухонь</a></li>
+			<li><a href="contact.html">📩 Контакти</a></li>
+		</ul>
+	</div>
+
+	<section>
+		<p>
+			<strong>Eaty</strong> — це зручний сайт для тих, хто шукає смачні заклади по всій Україні.  
+			Ми допоможемо знайти найкращі ресторани, кав'ярні, фаст-фуд або локальні смаколики, де б ви не були.
+		</p>
+	</section>
+
+	<section class="benefits">
+		<h2>Чому обирають нас?</h2>
+		<ul>
+			<li>🍽️ Великий вибір кухонь: від української до екзотичної</li>
+			<li>📍 Зручний пошук по містах та категоріях</li>
+			<li>⭐ Відгуки та рейтинги закладів</li>
+			<li>🗺️ Інтерактивна карта для навігації</li>
+			<li>📱 Адаптивний дизайн для мобільних пристроїв</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Смачна підбірка</h2>
+		<p>Натисніть на фото, щоб побачити його у повному розмірі:</p>
+
+		<div class="gallery">
+			<a href="images/full/food1.jpg" target="_blank">
+				<img src="images/thumb/food1.jpg" alt="Страва 1">
+			</a>
+			<a href="images/full/food2.jpg" target="_blank">
+				<img src="images/thumb/food2.jpg" alt="Страва 2">
+			</a>
+			<a href="images/full/food3.jpg" target="_blank">
+				<img src="images/thumb/food3.jpg" alt="Страва 3">
+			</a>
+			<a href="images/full/food4.jpg" target="_blank">
+				<img src="images/thumb/food4.jpg" alt="Страва 4">
+			</a>
+		</div>
+
+		<p class="caption">Галерея смачних моментів 🍕🍰🍜</p>
+	</section>
+
+</body>
+</html>
+
