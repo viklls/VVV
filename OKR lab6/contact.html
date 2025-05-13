@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакти – Eaty</title>
+	<meta name="author" content="Онищенко Вікторія">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #fffbe6;
+			margin: 0;
+			padding: 40px;
+			color: #333;
+		}
+		h1 {
+			text-align: center;
+			color: #ff5e57;
+			font-size: 36px;
+		}
+		section {
+			max-width: 800px;
+			margin: 0 auto;
+			background-color: #ffffff;
+			padding: 30px;
+			border-radius: 12px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			margin-bottom: 40px;
+		}
+		ul {
+			font-size: 18px;
+			line-height: 1.6;
+		}
+		form label {
+			font-weight: bold;
+		}
+		form input, form textarea {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+		}
+		form input[type="submit"] {
+			background-color: #ff5e57;
+			color: white;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		form input[type="submit"]:hover {
+			background-color: #e6453e;
+		}
+		.map-container {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 */
+			height: 0;
+			overflow: hidden;
+			border-radius: 12px;
+			box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+		.map-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Зв'язатися з нами</h1>
+
+	<section>
+		<p>Маєш питання, побажання чи пропозицію? Напиши нам — ми завжди відкриті до зворотного зв’язку.</p>
+
+		<h2>Контактна інформація</h2>
+		<ul>
+			<li><strong>Email:</strong> eaty.contact@gmail.com</li>
+			<li><strong>Телефон:</strong> +38 (099) 123-45-67</li>
+			<li><strong>Адреса:</strong> вул. Смачна, 12, Київ, Україна</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Форма зворотного зв'язку</h2>
+		<form action="#" method="post">
+			<label for="name">Ім'я:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Повідомлення:</label>
+			<textarea id="message" name="message" rows="5" required></textarea>
+
+			<div class="submit-wrapper">
+				<input type="submit" value="Надіслати">
+				<span class="note">Після надсилання перевірте пошту</span>
+			</div>
+
+		</form>
+	</section>
+
+	<section>
+		<h2>Наше розташування</h2>
+		<div class="map-container">
+			<iframe 
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.3479808205185!2d30.516376615745544!3d50.444341079474335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfb9b93861c1%3A0x1c2bb2df9b05b9a6!2z0JrQsNC80LDRgNC40YLQtdC70YzQvdC-0LPQviwgMTIsINCa0LjRl9CyLCDQmtC-0L3RltC80LXQvdGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAwNDYxMQ!5e0!3m2!1suk!2sua!4v1652959564103!5m2!1suk!2sua" 
+				allowfullscreen="" 
+				loading="lazy" 
+				referrerpolicy="no-referrer-when-downgrade">
+			</iframe>
+		</div>
+	</section>
+
+</body>
+</html>
+

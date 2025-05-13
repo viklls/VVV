@@ -1,0 +1,244 @@
+﻿/* === Основне оформлення тіла сторінки === */
+body {
+	font-family: 'Segoe UI', sans-serif;
+	font-size: 19px;
+	color: #222;
+	line-height: 1.8;
+	text-align: justify;
+
+	margin: 0;
+	padding: 30px;
+}
+
+/* === Заголовки === */
+h1, h2, h3 {
+	text-align: center;
+	color: #d84315;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	background-color: #ffccbc;
+	padding: 10px;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* === Посилання === */
+a {
+	color: #4a148c;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 2px dotted #4a148c;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #e91e63 !important;
+	border-bottom: 2px solid #e91e63;
+	background-color: #fce4ec;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+/* === Абзац з класом === */
+p.custom {
+	color: #c62828 !important;
+	font-style: italic;
+	font-size: 20px;
+}
+
+/* === Списки === */
+ul {
+	list-style-type: square;
+	color: #1b5e20;
+	padding-left: 25px;
+	font-size: 17px;
+}
+
+ol {
+	list-style-type: upper-roman;
+	color: #0d47a1;
+	padding-left: 35px;
+	font-size: 17px;
+}
+
+dl dt {
+	font-weight: bold;
+	color: #bf360c;
+	font-size: 18px;
+}
+
+dl dd {
+	margin-left: 35px;
+	color: #2e7d32;
+	font-style: italic;
+}
+
+/* === Таблиці === */
+table {
+	width: 95%;
+	margin: 40px auto;
+	border-collapse: collapse;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	background-color: #ffffff;
+	font-size: 17px;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+table th, table td {
+	border: 2px solid #ccc;
+	padding: 14px;
+}
+
+table th {
+	background-color: #ff7043;
+	color: white;
+	font-size: 18px;
+}
+
+table tr:nth-child(even) {
+	background-color: #fff8e1;
+}
+
+table tr:hover {
+	background-color: #ffe0b2;
+	transition: background-color 0.3s ease;
+}
+
+
+
+
+
+/* === Контекстні селектори  === */
+
+section p {
+	color: #00838f; /* бірюзовий */
+	font-style: italic;
+}
+
+
+/* === Сусідні селектори  === */
+
+nav + ul {
+	background-color: #f1f8e9;
+	border-left: 4px solid #81c784;
+	padding: 10px;
+}
+
+
+/* === Дочірні селектори === */
+table > caption {
+	color: #e65100;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+table  caption {
+	color: #f1f8e9;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+/*  Блочний елемент: div  */
+.highlight-box {
+	background-color: #fff3cd;
+	border-left: 6px solid #ffc107;
+	padding: 15px 20px;
+	margin: 20px 0;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	font-size: 17px;
+}
+
+/*  Рядковий елемент: span  */
+.highlighted-text {
+	color: #d84315;
+	font-weight: bold;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.floating-hint {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background-color: #ffecb3;
+	color: #333;
+	padding: 10px 15px;
+	border-left: 5px solid #ffb300;
+	border-radius: 8px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	z-index: 1000;
+}
+
+.submit-wrapper {
+	position: relative; /* Батьківський блок для позиціонування span */
+	display: inline-block;
+}
+
+.note {
+	background: #fff3cd;
+	padding: 10px;
+	margin: 20px 0;
+	border-left: 4px solid #ffc107;
+	font-weight: bold;
+}
+
+
+.float-box {
+	float: right;
+	width: 300px;
+	margin: 0 0 20px 30px;
+	padding: 15px;
+	background-color: #e3f2fd;
+	border-left: 5px solid #2196f3;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+	font-size: 16px;
+}
+
+a:link {
+	color: #4a148c; /* Колір для невідвіданого посилання */
+}
+
+a:visited {
+	color: #6a1b9a; /* Колір для вже відвіданого */
+}
+
+a:hover {
+	color: #e91e63 !important;
+	background-color: #fce4ec;
+	border-bottom: 2px solid #e91e63;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+a:active {
+	color: #ff1744;
+}
+
+ul li:first-child {
+	background-color: #81c784;
+	font-weight: bold;
+}
+
+.note::before {
+	content: "🔔 ";
+	color: #ff6f00;
+	font-weight: bold;
+}
+
+.note::after {
+	content: " 🍴";
+	color: #4caf50;
+}
+
+
+
+
+

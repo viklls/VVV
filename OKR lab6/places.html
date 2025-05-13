@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Заклади – Eaty</title>
+	<meta name="author" content="Онищенко Вікторія">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			color: #333;
+			margin: 0;
+			padding: 40px;
+		}
+		h1 {
+			text-align: center;
+			color: #ff5e57;
+			font-size: 36px;
+			margin-bottom: 10px;
+		}
+		p.intro {
+			text-align: center;
+			font-size: 18px;
+			color: #555;
+			margin-bottom: 40px;
+		}
+		.table-container {
+			max-width: 1200px;
+			margin: 0 auto 50px auto;
+			padding: 20px;
+			background-color: #ffffff;
+			border-radius: 12px;
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 10px;
+		}
+		caption {
+			caption-side: top;
+			text-align: center;
+			font-size: 24px;
+			color: #cc0000;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		th {
+			background-color: #ffe0b2;
+			padding: 15px;
+			font-size: 18px;
+			border: 1px solid #ccc;
+		}
+		td {
+			text-align: center;
+			padding: 15px;
+			border: 1px solid #ddd;
+			font-size: 16px;
+		}
+		img {
+			width: 100px;
+			height: 80px;
+			border-radius: 10px;
+			object-fit: cover;
+			box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+		}
+		a {
+			color: #0073e6;
+			text-decoration: none;
+			font-weight: 500;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Список закладів</h1>
+	<p class="intro">Оберіть заклад, який вам до смаку. Нижче наведено популярні приклади для різних кухонь світу.</p>
+
+	<div class="table-container">
+		<table>
+			<caption>Популярні заклади за видами кухні</caption>
+			<tr>
+				<th>Українська кухня</th>
+				<th>Італійська кухня</th>
+				<th>Японська кухня</th>
+			</tr>
+			<tr>
+				<td><img src="images/ukraine1.jpg" alt="Шинок"></td>
+				<td><img src="images/italy1.jpg" alt="Napule"></td>
+				<td><img src="images/japan1.jpg" alt="SushiYa"></td>
+			</tr>
+			<tr>
+				<td><a href="https://github.com/viklls/VVV.git" target="_blank">Шинок, Київ</a></td>
+				<td><a href="https://github.com/viklls/VVV.git" target="_blank">Napule, Київ</a></td>
+				<td><a href="https://github.com/viklls/VVV.git" target="_blank">SushiYa, Україна</a></td>
+			</tr>
+			<tr>
+				<td>Традиційна українська кухня в автентичному стилі.</td>
+				<td>Справжня італійська піца та паста від шефа з Неаполя.</td>
+				<td>Суші та роли з доставкою по всій країні.</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="table-container">
+		<table>
+			<caption>Інші популярні напрямки</caption>
+			<tr>
+				<th>Східна кухня</th>
+				<th>Мексиканська кухня</th>
+				<th>Французька кухня</th>
+			</tr>
+			<tr>
+				<td><img src="images/east1.jpg" alt="BAZAR"></td>
+				<td><img src="images/mexico1.jpg" alt="Taqueria Mexico"></td>
+				<td><img src="images/france1.jpg" alt="Comme Il Faut"></td>
+			</tr>
+			<tr>
+				<td><a href="https://github.com/viklls/VVV.git" target="_blank">BAZAR, Київ</a></td>
+				<td><a href="https://github.com/viklls/VVV.git" target="_blank">Taqueria Mexico, Харків</a></td>
+				<td><a href="https://github.com/viklls/VVV.git" target="_blank">Comme Il Faut, Київ</a></td>
+			</tr>
+			<tr>
+				<td>Східна гострота та колорит в сучасному інтер'єрі.</td>
+				<td>Автентичні тако та буріто з мексиканськими соусами.</td>
+				<td>Французька класика: круасани, сири, витончені десерти.</td>
+			</tr>
+		</table>
+	</div>
+	<div class="table-container">
+		<table>
+			<caption>Порівняння типів закладів</caption>
+			<tr>
+				<th rowspan="2">Тип закладу</th>
+				<th colspan="2">Середній чек</th>
+				<th rowspan="2">Формат обслуговування</th>
+				<th rowspan="2">Наявність доставки</th>
+			</tr>
+			<tr>
+				<th>Без напоїв</th>
+				<th>З напоями</th>
+			</tr>
+			<tr>
+				<td>Фаст-фуд</td>
+				<td>150 грн</td>
+				<td>200 грн</td>
+				<td>Самообслуговування</td>
+				<td>✅</td>
+			</tr>
+			<tr>
+				<td>Кафе</td>
+				<td>250 грн</td>
+				<td>320 грн</td>
+				<td>Офіціанти</td>
+				<td>✅</td>
+			</tr>
+			<tr>
+				<td>Ресторан</td>
+				<td>500 грн</td>
+				<td>650 грн</td>
+				<td>Офіціанти + сомельє</td>
+				<td>❌</td>
+			</tr>
+			<tr>
+				<td>Їдальня</td>
+				<td>100 грн</td>
+				<td>140 грн</td>
+				<td>Лінія роздачі</td>
+				<td>❌</td>
+			</tr>
+		</table>
+	</div>
+	<table id="myTable">
+		<tr>
+			<td>Борщ</td>
+			<td>Вареники</td>
+		</tr>
+		<tr>
+			<td>Піцца</td>
+			<td>Суші</td>
+		</tr>
+	</table>
+	
+	<script>
+		const table = document.getElementById("myTable");
+		const value = table.rows[0].cells[1].innerHTML;
+		alert("Значення з першого рядка, друга клітинка: " + value);
+	</script>
+
+	<!--
+		<script>
+			window.addEventListener("DOMContentLoaded", function () {
+				const originalBg = document.body.style.backgroundColor;
+
+
+				document.body.style.backgroundColor = "#c8e6c9";
+
+				setTimeout(() => {
+					document.body.style.backgroundColor = originalBg;
+				}, 30000);
+			});
+		</script>
+	-->
+	<!--
+		<script>
+			alert("Зараз ви будете перенаправлені на головну сторінку...");
+
+			setTimeout(() => {
+				location.href = "home.html";
+			}, 3000);
+		</script>
+	-->
+	
+
+</body>
+</html>
+
